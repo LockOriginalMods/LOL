@@ -29,10 +29,7 @@ public class AlloySmelterScreen extends ContainerScreen<AlloySmelterContainer> {
         RenderSystem.color4f(1.0f, 1.0f, 1.0f, 1.0f);
         this.minecraft.getTextureManager().bindTexture(TEXTURE);
         this.blit(this.guiLeft, this.guiTop, 0, 0, this.xSize, this.ySize);
-
-
         this.blit(this.guiLeft + 79, this.guiTop + 35, 176, 0, this.container.getSmeltProgressionScaled(), 15);
-        this.blit(this.guiLeft + 54, this.guiTop + 34, 176, 0, this.container.getBurnLeftScaled(), 14);
     }
 
 

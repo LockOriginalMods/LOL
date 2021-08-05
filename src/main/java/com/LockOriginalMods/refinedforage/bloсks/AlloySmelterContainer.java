@@ -54,7 +54,7 @@ public class AlloySmelterContainer extends Container {
         }
 
         //Alloy_Smelter Slot
-        this.addSlot(new SlotItemHandler(tile.getInventory(), 0, 56, 34));
+        this.addSlot(new SlotItemHandler(tile.getInventory(), 0, 67, 15));
         this.addSlot(new SlotItemHandler(tile.getInventory(), 1, 116, 35));
 
         this.trackInt(currentSmeltTime = new FunctionalIntReferenceHolder(() -> this.tileEntity.currentSmeltTime,
@@ -117,11 +117,6 @@ public class AlloySmelterContainer extends Container {
                 ? this.currentSmeltTime.get() * 23 / this.tileEntity.maxSmeltTime
                 : 0;
     }
-    @OnlyIn(Dist.CLIENT)
-    public int getBurnLeftScaled() {
-        return this.SmeltTime.get() != 0 && this.tileEntity.maxSmeltTime != 0
-                ? this.SmeltTime.get() * 12 / this.tileEntity.maxSmeltTime
-                : 0;
-    }
+
 
 }
