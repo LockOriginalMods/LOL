@@ -1,0 +1,14 @@
+
+{
+  "variants": {
+    "facing=north,lit=false":  { "model": "refinedforage:block/alloy_smelter" },
+    "facing=east,lit=false":   { "model": "refinedforage:block/alloy_smelter", "y": 90 },
+    "facing=south,lit=false":   { "model": "refinedforage:block/alloy_smelter", "y": 180 },
+    "facing=west,lit=false":   { "model": "refinedforage:block/alloy_smelter", "y": 270 },
+
+    "facing=north,lit=true":  { "model": "refinedforage:block/lit_alloy_smelter" },
+    "facing=east,lit=true":   { "model": "refinedforage:block/lit_alloy_smelter", "y": 90 },
+    "facing=south,lit=true":   { "model": "refinedforage:block/lit_alloy_smelter", "y": 180 },
+    "facing=west,lit=true":   { "model": "refinedforage:block/lit_alloy_smelter", "y": 270 }
+  }
+}
